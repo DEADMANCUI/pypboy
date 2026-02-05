@@ -10,5 +10,15 @@ setup(
     license='MIT',
     author='ZapWizard',
     author_email='zapwizard@gmail.com',
-    description='Pypboy 3000 MK IV'
+    description='Pypboy 3000 MK IV',
+    python_requires='>=3.9',
+    classifiers=[
+        'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.9',
+        'Programming Language :: Python :: 3.10',
+        'Programming Language :: Python :: 3.11',
+        'Programming Language :: Python :: 3.12',
+        'Programming Language :: Python :: 3.13',
+        'License :: OSI Approved :: MIT License',
+    ]
 )

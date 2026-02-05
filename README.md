@@ -7,6 +7,11 @@
 > I branched off from the Fallout 3 style Pip-Boy 3000 code.
 > The graphics are positioned for a 720x720 display.
 
+## Requirements
+
+- **Python**: 3.9 or higher (tested with Python 3.13.5)
+- **Raspberry Pi OS**: Latest (or any Linux distribution with required dependencies)
+
 ## Installation
 
 #### These installation instructions _assume_ that you're running on a Raspberry Pi running Raspberry Pi OS
