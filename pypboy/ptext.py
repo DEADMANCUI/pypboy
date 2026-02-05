@@ -5,8 +5,6 @@
 # Please see README.md for explanation of options.
 # https://github.com/cosmologicon/pygame-text
 
-from __future__ import division, print_function
-
 from math import ceil, sin, cos, radians, exp
 from collections import namedtuple
 import pygame

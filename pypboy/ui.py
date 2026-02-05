@@ -3,7 +3,7 @@ import pygame
 import settings
 import time
 import os
-import imp
+import importlib.util
 # import cairosvg
 import io
 from datetime import datetime
@@ -504,8 +504,10 @@ class Menu(game.Entity):
                             if filename == "frameorder.py":
                                 url = self.image_url + "/" + filename
                                 # print ("url =",url)
-                                file = imp.load_source("frameorder.py",
-                                                       os.path.join(self.image_url, "frameorder.py"))
+                                module_path = os.path.join(self.image_url, "frameorder.py")
+                                spec = importlib.util.spec_from_file_location("frameorder", module_path)
+                                file = importlib.util.module_from_spec(spec)
+                                spec.loader.exec_module(file)
                                 self.frameorder = file.frameorder
                                 self.frame = 0
 
